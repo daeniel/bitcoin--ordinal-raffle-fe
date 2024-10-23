@@ -8,10 +8,7 @@ export async function GET(_request: NextRequest) {
 
     let config = {
       method: "get",
-      url: `${NEXT_PUBLIC_BACKEND}`,
-      // headers: {
-      //     'Authorization': `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`
-      // }
+      url: `${NEXT_PUBLIC_BACKEND}`
     };
 
     const response = await axios.request(config);
