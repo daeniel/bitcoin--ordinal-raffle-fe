@@ -128,14 +128,6 @@ const Header = () => {
             });
 
             console.log("Response:", response);
-
-            // Verify signature
-            // try {
-            //     const isValid = Verifier.verifySignature(
-            //         response.result.address,
-            //         response.result.message,
-            //         response.result.signature
-            //     );
             const usersNativeSegwitAddress = userAddresses.result.addresses.find(
                 (address: { type: string }) => address.type === "p2wpkh"
             );
