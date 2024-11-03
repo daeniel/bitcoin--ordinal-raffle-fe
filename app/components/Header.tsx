@@ -136,11 +136,6 @@ const Header = () => {
             //         response.result.message,
             //         response.result.signature
             //     );
-
-            //     console.log("Signature is valid: ", isValid);
-            // } catch (error) {
-            //     console.log("Verification error:", error);
-            // }
             const usersNativeSegwitAddress = userAddresses.result.addresses.find(
                 (address: { type: string }) => address.type === "p2wpkh"
             );
